@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KXN | 科迅集团</title>
+		<style>
+			 * {
+				 margin: 0;
+				 padding: 0;
+				 box-sizing: border-box;
+			 }
+			html {
+				height: 100%;
+				overflow: hidden;
+			}
+			body {
+				min-height: 100%;
+				width: 100%;
+				margin: 0;
+				border: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				background-color: #000;
+				color: #fff;
+			}
+			.header{
+				width: 100%;
+				text-align: center;
+				position: fixed;
+				top:0;
+			}
+			.container {
+				margin: auto;
+				padding-top:100px;
+				min-height:800px;
+				text-align: center;
+			}
+			.footer{
+				width: 100%;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+			}
+			.p {
+				width: 100%;
+			}
+	 /*CSS导航菜单基础样式重置 */
+	.menu{
+		width: 100%;
+		background-color: #333;
+			}	
+	/* 导航菜单容器 */
+	.navbar {
+		margin: auto;
+		width: 400px;
+		font-family: Arial, sans-serif;
+			}
+	/* 一级菜单样式 */
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        .nav-list > li {
+            position: relative;
+        }
+        
+        .nav-list a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        /* 悬停效果 */
+        .nav-list a:hover {
+            background-color: #555;
+        }
+        
+        /* 二级下拉菜单 */
+        .dropdown {
+	    list-style-type: none;
+            position: absolute;
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown li {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+        
+        /* 显示下拉菜单 */
+        .nav-list li:hover .dropdown {
+            display: block;
+        }
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="menu">
+				<nav class="navbar">
+				<ul class="nav-list">
+					<li><a href="#home">首页</a></li>
+      <li><a href="#biz">业务</a></li>
+					<li><a href="#case">项目</a></li>
+					<li><a href="#contact">联系</a></li>
+      <li><a href="#about">关于</a></li>
+				</ul>
+				</nav>
+			</div>
+			<h1 style="font-size:30px;margin-top:20px;">Kain Capital | 凯银资本</h1>
+		</div>
+		<div id="home" class="container">
+			<p style="color:red;font-size:42px;line-height:200px;">专注融资与并购</p>
+		</div>
+		<div id="about" class="container">
+			<p style="color:red;font-size:42px;line-height:200px;">关于我们</p>
+		</div>
+		<div id="team" class="container">
+			<p id="china" style="color:red;font-size:42px;line-height:200px;">中国</p>
+			<p style="font-size:26px;line-height:50px;">北京、上海、广州、深圳、昆明、郑州、成都、杭州、长沙、武汉、郑州、西安</p>
+			<p id="global" style="color:red;font-size:42px;line-height:200px;">全球</p>
+			<p style="font-size:26px;line-height:50px;">香港、苏黎世、纽约、巴黎、迪拜、伦敦、新加坡、曼谷、东京、首尔、悉尼</p>
+		</div>
+		<div id="biz" class="container">
+			<p style="color:red;font-size:42px;line-height:200px;">业务</p>
+			<p id="fin" style="color:red;font-size:42px;line-height:200px;">融资</p>
+			<p id="ma" style="color:red;font-size:42px;line-height:200px;">并购</p>
+		</div>
+		<div id="case" class="container">
+			<p style="color:red;font-size:42px;line-height:200px;">案例</p>
+		</div>
+		<div id="contact" class="container">
+			<p style="color:red;font-size:42px;line-height:200px;">联系我们</p>
+		</div>
+		<div class="footer">
+			<p style="color:red;font-size:42px;">KXN</p>
+		        <p style="font-size:16px;line-height:30px;">info@KXN.com</p>
+		</div>
+	</body>
+</html>
