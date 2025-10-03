@@ -58,7 +58,7 @@
 		width: 400px;
 		font-family: Arial, sans-serif;
 			}
-	/* 一级菜单样式 */
+	/* 菜单样式 */
         .nav-list {
             list-style-type: none;
             display: flex;
@@ -81,36 +81,7 @@
         .nav-list a:hover {
             background-color: #555;
         }
-        
-        /* 二级下拉菜单 */
-        .dropdown {
-	    list-style-type: none;
-            position: absolute;
-            display: none;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        .dropdown li {
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .dropdown a {
-            color: black;
-            padding: 12px 16px;
-            text-align: left;
-        }
-        
-        .dropdown a:hover {
-            background-color: #ddd;
-        }
-        
-        /* 显示下拉菜单 */
-        .nav-list li:hover .dropdown {
-            display: block;
-        }
+
 		</style>
 	</head>
 	<body>
@@ -118,18 +89,17 @@
 			<div class="menu">
 				<nav class="navbar">
 				<ul class="nav-list">
-					<li><a href="www.kxn.com">首页</a></li>
+					<li><a href="#home">首页</a></li>
 					<li><a href="#biz">业务</a></li>
 					<li><a href="#case">项目</a></li>
 					<li><a href="#contact">联系</a></li>
-					<li><a href="#about">关于</a></li>
 				</ul>
 				</nav>
 			</div>
 			<h1 style="font-size:30px;margin-top:20px;">KXN | 科迅网络</h1>
 		</div>
 		<div id="home" class="container">
-			<p style="color:red;font-size:42px;line-height:200px;">提供AI应用集群、CDN加速等近场计算、边缘计算业务。</p>
+			<p style="color:red;font-size:42px;line-height:200px;">一家专注于提供AI应用集群、CDN加速等近场计算、边缘计算业务的公司，在云南、海南、新疆设有近场算力中心。</p>
 		</div>
 		<div id="biz" class="container">
 			<p style="color:red;font-size:42px;line-height:200px;">业务</p>
@@ -143,10 +113,6 @@
 		<div id="contact" class="container">
 			<p style="color:red;font-size:42px;line-height:200px;">联系我们</p>
 			<p style="font-size:16px;line-height:30px;">info@KXN.com</p>
-		</div>
-		<div id="about" class="container">
-			<p style="color:red;font-size:42px;line-height:200px;">关于我们</p>
-			<p style="color:red;font-size:28px;">一家专注于提供AI应用集群、CDN加速等近场计算、边缘计算业务的公司，在云南、海南、新疆设有近场算力中心。</p>
 		</div>
 		<div class="footer">
 			<p style="color:red;font-size:42px;">KXN</p>
